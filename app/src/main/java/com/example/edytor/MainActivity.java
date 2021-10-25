@@ -42,6 +42,9 @@ public class MainActivity extends AppCompatActivity {
             if(isChecked==true){
                 obraz.setVisibility(View.INVISIBLE);
             }
+            else{
+                obraz.setVisibility(View.VISIBLE);
+            }
         }
     });
 
