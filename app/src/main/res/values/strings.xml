@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">edytor</string>
+    <string name="schowaj_obraz">Schowaj Obraz</string>
+    <string name="pokaz_obraz">Pokaz obraz</string>
 </resources>

@@ -10,7 +10,7 @@
         android:id="@+id/zchowaj_obraz"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Schowaj Obraz"
+        android:text="@string/schowaj_obraz"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.944"
@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:checked="false"
-        android:text="Pokaz obraz"
+        android:text="@string/pokaz_obraz"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.052"
@@ -34,7 +34,7 @@
     <EditText
         android:id="@+id/rotacja"
         android:layout_width="147dp"
-        android:layout_height="45dp"
+        android:layout_height="48dp"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -42,7 +42,9 @@
         app:layout_constraintHorizontal_bias="0.06"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976" />
+        app:layout_constraintVertical_bias="0.976"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/skala"
@@ -55,7 +57,8 @@
         app:layout_constraintHorizontal_bias="0.939"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976" />
+        app:layout_constraintVertical_bias="0.976"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageView
         android:id="@+id/obraz"
@@ -81,7 +84,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.79"
-        app:srcCompat="@drawable/lewo" />
+        app:srcCompat="@drawable/lewo"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
         android:id="@+id/imageButton2"
@@ -94,7 +98,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.794"
-        app:srcCompat="@drawable/prawo" />
+        app:srcCompat="@drawable/prawo"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
         android:id="@+id/imageButton3"
@@ -107,7 +112,8 @@
         app:layout_constraintStart_toStartOf="@+id/obraz"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.852"
-        app:srcCompat="@drawable/wyczysc" />
+        app:srcCompat="@drawable/wyczysc"
+        tools:ignore="SpeakableTextPresentCheck" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
