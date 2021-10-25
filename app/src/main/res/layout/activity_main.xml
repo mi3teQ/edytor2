@@ -62,14 +62,17 @@
 
     <ImageView
         android:id="@+id/obraz"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="298dp"
+        android:layout_height="163dp"
         android:adjustViewBounds="true"
+        android:layout_centerInParent="true"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.256"
         app:srcCompat="@drawable/kot" />
 
     <ImageButton
