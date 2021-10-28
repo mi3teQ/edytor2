@@ -74,6 +74,26 @@ public class MainActivity extends AppCompatActivity {
 
         }
     });
+    skala.addTextChangedListener(new TextWatcher() {
+        @Override
+        public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
 
+        }
+
+        @Override
+        public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+            String value= skala.getText().toString();
+            int finalValue=Integer.parseInt(value);
+            obraz.getLayoutParams().height = finalValue;
+            obraz.getLayoutParams().width = finalValue;
+            obraz.requestLayout();
+
+        }
+
+        @Override
+        public void afterTextChanged(Editable editable) {
+
+        }
+    });
     }
 }
