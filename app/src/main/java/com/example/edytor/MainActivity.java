@@ -16,7 +16,7 @@ import android.graphics.Matrix;
 
 public class MainActivity extends AppCompatActivity {
 
-    CheckBox pokaz,ukryj;
+    CheckBox ukryj;
     EditText rotacja, skala;
     ImageView obraz;
     ImageButton prawo, lewo;
@@ -29,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    pokaz=(CheckBox) findViewById(R.id.pokaz_obraz);
     ukryj=(CheckBox) findViewById(R.id.zchowaj_obraz);
     rotacja=(EditText) findViewById(R.id.rotacja);
     skala=(EditText) findViewById(R.id.skala);
@@ -94,17 +93,17 @@ public class MainActivity extends AppCompatActivity {
         prawo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                obraz.setImageResource(images[l]);
-                l++;
-                if(l==4)
-                    l=0;
+              obraz.setImageResource(images[l]);
+               l++;
+               if(l==4)
+                   l=0;
             }
         });
         lewo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                l--;
+               l--;
                 if(l==-1)
                     l=3;
                 obraz.setImageResource(images[l]);
