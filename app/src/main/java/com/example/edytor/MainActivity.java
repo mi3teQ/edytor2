@@ -112,10 +112,11 @@ public class MainActivity extends AppCompatActivity {
         lewo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                obraz.setImageResource(images[l]);
+
                 l--;
                 if(l==-1)
                     l=3;
+                obraz.setImageResource(images[l]);
             }
         });
     }
