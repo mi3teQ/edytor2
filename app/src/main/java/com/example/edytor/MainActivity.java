@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.graphics.Matrix;
 
@@ -18,7 +19,9 @@ public class MainActivity extends AppCompatActivity {
     CheckBox pokaz,ukryj;
     EditText rotacja, skala;
     ImageView obraz;
-
+    ImageButton prawo, lewo;
+    int l=0;
+    int images[]={R.drawable.kot,R.drawable.kot1,R.drawable.kot2,R.drawable.kot3};
 
 
 
@@ -31,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
     rotacja=(EditText) findViewById(R.id.rotacja);
     skala=(EditText) findViewById(R.id.skala);
     obraz=(ImageView) findViewById(R.id.obraz);
+    prawo=(ImageButton) findViewById(R.id.prawo);
+    lewo=(ImageButton) findViewById(R.id.lewo);
 
     pokaz.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
         @Override
@@ -95,5 +100,23 @@ public class MainActivity extends AppCompatActivity {
 
         }
     });
+        prawo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                obraz.setImageResource(images[l]);
+                l++;
+                if(l==4)
+                    l=0;
+            }
+        });
+        lewo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                obraz.setImageResource(images[l]);
+                l--;
+                if(l==-1)
+                    l=3;
+            }
+        });
     }
 }

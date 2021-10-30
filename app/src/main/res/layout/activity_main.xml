@@ -62,8 +62,8 @@
 
     <ImageView
         android:id="@+id/obraz"
-        android:layout_width="298dp"
-        android:layout_height="163dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:adjustViewBounds="true"
         android:layout_centerInParent="true"
         android:scaleType="centerCrop"
@@ -76,7 +76,7 @@
         app:srcCompat="@drawable/kot" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/lewo"
         android:layout_width="65dp"
         android:layout_height="72dp"
         android:background="?selectableItemBackgroundBorderless"
@@ -91,7 +91,7 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/prawo"
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:scaleType="fitXY"
