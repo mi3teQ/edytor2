@@ -37,16 +37,7 @@ public class MainActivity extends AppCompatActivity {
     prawo=(ImageButton) findViewById(R.id.prawo);
     lewo=(ImageButton) findViewById(R.id.lewo);
 
-    pokaz.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-        @Override
-        public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 
-            if(isChecked==true)
-            {
-                obraz.setVisibility(View.VISIBLE);
-            }
-        }
-    });
     ukryj.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
         @Override
         public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
