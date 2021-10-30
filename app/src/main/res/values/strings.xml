@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">edytor</string>
     <string name="schowaj_obraz">Schowaj Obraz</string>
+    <string name="obroc_text">Obroc</string>
+    <string name="skala_text">Skaluj (%)</string>
 </resources>
